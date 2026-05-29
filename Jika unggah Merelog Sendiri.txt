@@ -1,0 +1,11 @@
+Masalah relog (halaman termuat ulang / refresh) saat membuka kamera di perangkat seluler (terutama saat memakan waktu lama) sering kali disebabkan oleh manajemen memori sistem operasi (OS). Saat kamera dibuka, OS akan menidurkan atau mematikan proses peramban (browser) di latar belakang untuk menghemat RAM.
+
+Selain itu, memicu input file yang memiliki properti display: none (kelas hidden di Tailwind) menggunakan fungsi JavaScript .click() sering kali membuat browser kehilangan konteks saat kembali dari aplikasi kamera, sehingga memicu reload paksa.
+
+Solusi yang saya terapkan tanpa merubah fungsi asli:
+
+Mengubah tombol pemicu unggah dari <button> dengan JS .click() menjadi <label for="fileInput"> bawaan HTML. Ini adalah metode standar yang jauh lebih stabil di browser seluler.
+
+Mengubah kelas pada <input type="file"> dari hidden (display: none) menjadi absolute w-0 h-0 opacity-0 -z-10. Ini membuat elemen tetap dirender oleh mesin browser (tidak dianggap hilang) namun tetap tidak terlihat oleh mata, sehingga status file lebih terjaga saat OS memulihkan memori.
+
+Menambahkan atribut type="button" pada semua elemen tombol untuk mencegah browser menganggapnya sebagai tombol submit otomatis yang memicu refresh halaman.
