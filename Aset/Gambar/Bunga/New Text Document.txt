@@ -1,0 +1,7 @@
+
+buatkan script bat untuk membuat file txt dan isi datanya menjadi seperti dibawah ini,
+ini sayajalankan di folder saat ini, saya memiliki beberapa folder dan sub file di directory saat ini, jadi sesuaikan datanya dengan data real
+
+https://raw.githubusercontent.com/tewetech/aset/0c4bfc618c6d83c68b10679003c7df19568dbc1a/Bunga/Biru/Biru%20(4).png
+
+https://raw.githubusercontent.com/tewetech/aset/0c4bfc618c6d83c68b10679003c7df19568dbc1a/Bunga/Grey/Grey%20(2).png
